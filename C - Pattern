@@ -1,0 +1,27 @@
+#include <iostream> 
+using namespace std; 
+  
+int height = 5; 
+
+int width = (2 * height) - 1; 
+void printC() 
+{ 
+    int i, j; 
+    for (i = 0; i < height; i++) { 
+        cout <<"*"; 
+        for (j = 0; j < (height - 1); j++) { 
+            if (i == 0 || i == height - 1) 
+                cout <<"*"; 
+            else
+                continue; 
+        } 
+        cout <<"\n"; 
+    } 
+} 
+int main() 
+{ 
+   printC() ;
+    return 0; 
+} 
+    
+  
