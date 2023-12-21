@@ -1,0 +1,27 @@
+#include <iostream> 
+using namespace std; 
+  
+int height = 5;  
+int width = (2 * height) - 1; 
+
+void printK() 
+{ 
+    int i, j, half = height / 2, dummy = half; 
+    for (i = 0; i < height; i++) { 
+        cout <<"*"; 
+        for (j = 0; j <= half; j++) { 
+            if (j == abs(dummy)) 
+                cout <<"*"; 
+            else
+                cout <<" "; 
+        } 
+        cout <<"\n"; 
+        dummy--; 
+    } 
+} 
+int main() 
+{ 
+     printK();
+    return 0; 
+} 
+  
